@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
-    WebDriver driver;
+
     String url = "https://login.pracuj.pl/";
 
     public LoginPage(WebDriver givenDriver){
@@ -25,7 +25,7 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 
-    public String getAllertText(){
+    public String getAlertText(){
 
         By alertMessage = By.xpath("//*[@data-test='text-feedback-message']");
         return driver.findElement(alertMessage).getText();

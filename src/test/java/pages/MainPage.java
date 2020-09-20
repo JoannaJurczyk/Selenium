@@ -3,9 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MainPage {
+public class MainPage extends BasePage {
 
-        WebDriver driver;
+
         String url = "https://login.pracuj.pl/";
 
         public MainPage(WebDriver givenDriver){
